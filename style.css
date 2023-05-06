@@ -1,0 +1,207 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+  }
+  body{
+	font-family: montserrat;
+  }
+  nav{
+	background: #131313;
+	height: 80px;
+	width: 100%;
+  }
+  label.logo{
+	color: rgb(255, 255, 255);
+	font-size: 35px;
+	line-height: 75px;
+	padding: 0 100px;
+	font-family:'Segoe UI';
+	font-weight: bold;
+  }
+  nav ul{
+	float: right;
+	margin-right: 20px;
+  }
+  nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+  }
+  nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-family: 'Inter';
+  }
+  a.active,a:hover{
+	background: #646464;
+	transition: .5s;
+  }
+  .checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+  }
+  #check{
+	display: none;
+  }
+  @media (max-width: 1090px){
+	label.logo{
+	  font-size: 30px;
+	  padding-left: 50px;
+	}
+	nav ul li a{
+	  font-size: 16px;
+	}
+  }
+  @media (max-width: 988px){
+	.checkbtn{
+	  display: block;
+	}
+	ul{
+	  position: fixed;
+	  width: 100%;
+	  height: 100vh;
+	  background: #202020;
+	  top: 80px;
+	  left: -100%;
+	  text-align: center;
+	  transition: all .5s;
+	}
+	nav ul li{
+	  display: block;
+	  margin: 50px 0;
+	  line-height: 30px;
+	}
+	nav ul li a{
+	  font-size: 20px;
+	}
+	a:hover,a.active{
+	  background: none;
+	  color: #707070;
+	}
+	#check:checked ~ ul{
+	  left: 0;
+	}
+  }
+  
+  section{
+	background-color: #131313;
+	background-size: cover;
+	height: 1px;
+  }
+
+  .grid-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 10%;
+	margin-top: 5%;
+  }
+
+  .grid-item{
+	border: 4px solid #000000;
+	padding: 5%;
+	aspect-ratio: 1;
+  }
+
+  .title{
+	padding-bottom: 1vw;
+  }
+
+  h2{
+	text-align: center;
+	font-size: 4vw;
+	font-family: 'Inter';
+	font-weight: 600;
+  }
+
+  h3{
+	text-align: center;
+	font-size: 3vw;
+	font-family: 'Inter';
+	font-weight: 400;
+	line-height: 5vw;
+  }
+
+  h4{
+	text-align: left;
+	font-size: 2.1vw;
+	font-family: 'Inter';
+	font-weight: 300;
+  }
+
+  h5{
+	font-family: 'Inter';
+	font-weight: 300;
+	font-size: 1.2vw;
+  }
+
+  .about{
+	padding-top: 5vw;
+	padding-left: 8vw;
+	padding-right: 8vw;
+  }
+
+  .date{
+   padding-top: 1vw;
+  }
+
+  .see{
+	position: relative;
+	top: -4%;
+	margin-left: 85%;
+	font-family: 'Inter';
+	font-size: 1.2vw;
+	font-weight: 300;
+  }
+
+  body{
+	background-color: #ffffff;
+  }
+
+  .post-title{
+	padding: 4vw;
+  }
+
+  .post{
+	padding-left: 5vw;
+	padding-right: 5vw;
+  }
+
+  .dark-mode{
+	background-color: black;
+	color: white;
+  }
+  
+  .theme-switch{
+	font-size: medium;
+	border: none;
+	color:#ffffff;
+	background-color: #000000;
+	padding: 10px;
+	float: right;
+	margin-top: 1.5%;
+	margin-right: 5%;
+	border-radius: 15px;
+  }
+ 
+  .ld-course-list-items div.ld_course_grid .thumbnail.course:hover {
+	cursor: pointer;
+}
+
+#post1{
+	background-image: url(post1bg.png);
+	color: #ffffff;
+}

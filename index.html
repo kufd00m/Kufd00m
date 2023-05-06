@@ -1,31 +1,60 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Kufd00m</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="inter.css">
-</head>
-
-<body>
-	
-	<div class="header_background">
-		<div class="header_buttons">
-			<nav>
-				<a href="index.html">Home</a> &nbsp;
-				<a href="about.html">About me</a> &nbsp;
-				<a href="projects.html">My projects</a> &nbsp;
-				<a href="contact.html">Contact</a> &nbsp;
-			</nav> 
-		</div>
-	</div>
-<div class="body">
-<h1 class="center">Welcome to my page!</h1>
-<h2 class="center">My name is Honza but you probably know me as Kufd00m. <br>
-  I made this page because I got bored and thought that it would be nice to have one. <br>
-  Enjoy your stay here! <br>
-</h2>
-<h5 class="center">I'll probably change the bg in the future</h5>
-</div>
-</body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home - Kufd00m</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="inter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Kufd00m</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="#">My Projects</a></li>
+        <li><a href="#">Contact Me</a></li>
+        <li><a href="#">My Social Media</a></li>
+      </ul>
+    </nav>
+    	<section> 
+		</section>
+    <button onclick="myFunction()" class="theme-switch">Toggle dark mode</button>
+		<div class="grid-container">
+			<div class="grid-item" id="post1">
+				<h2 class="title">Starting fresh!</h2>
+				<h4 class="description">After such a long time I've come to the conclusion that my code sucks,<p>so I remade everything together with how I want the website to look.</h4>
+				<h5 class="date">27th April 2023</h5>
+				<a class="see" href="post1.html"></a>
+			</div>
+      <div class="grid-item">
+        <h2 class="title">test item</h2>
+      </div>
+    </div>
+    
+  </body>
 </html>
+
+<script>
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode") ;
+  }
+  </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var aFeatures = document.querySelectorAll(".grid-item");
+    for (var i = 0; i < aFeatures.length; i++) {
+      aFeatures[i].addEventListener('click', function() {
+        window.location = this.querySelectorAll("a")[0].href;
+        return false;
+      });
+    }
+  });
+  </script>
