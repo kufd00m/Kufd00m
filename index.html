@@ -5,8 +5,11 @@
     <title>Home - Kufd00m</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="inter.css">
+	  <link rel="stylesheet" href="inter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="script">
+    <script src="dark-mode.js"></script> 
+    <script src="blog-script.js"></script> 
   </head>
   <body>
     <nav>
@@ -25,7 +28,7 @@
     </nav>
     	<section> 
 		</section>
-    <button onclick="myFunction()" class="theme-switch">Toggle dark mode</button>
+    <button onclick="darkmode()" class="theme-switch">dark mode</button>
 		<div class="grid-container">
 			<div class="grid-item" id="post1">
 				<h2 class="title">Starting fresh!</h2>
@@ -40,21 +43,3 @@
     
   </body>
 </html>
-
-<script>
-  function myFunction() {
-     var element = document.body;
-     element.classList.toggle("dark-mode") ;
-  }
-  </script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var aFeatures = document.querySelectorAll(".grid-item");
-    for (var i = 0; i < aFeatures.length; i++) {
-      aFeatures[i].addEventListener('click', function() {
-        window.location = this.querySelectorAll("a")[0].href;
-        return false;
-      });
-    }
-  });
-  </script>
